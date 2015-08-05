@@ -9,6 +9,7 @@ describe('the scrabble word path', {:type => :feature}) do
     visit('/')
     fill_in('word', :with => 'kendra')
     click_button('Send')
+    click_button('Next')
     expect(page).to have_content(11)
   end
 end
